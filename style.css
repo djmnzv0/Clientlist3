@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "h h h m m m m m m m m m "
+        "r r r r r r r r r r r r"
+        "r r r r r r r r r r r r"
+        "r r r r r r r r r r r r"
+        "r r r r r r r r r r r r"
+        "r r r r r r r r r r r r"
+        "n n n n n n a a i i i i"
+        "n n n n n n a a i i i i"
+        "n n n n n n a a e e e e"
+        "n n n n n n a a e e e e"
+        "b b b b b b b b b b b b"
+        "b b b b b b b b b b b b";
+
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.item1 {
+    grid-area: h;
+    background-color: blue;
+    color: white;
+}
+
+.item2 {
+    background-color: red;
+    grid-area: m;
+    color: white;
+}
+
+.item3 {
+    grid-area: r;
+    background-color: rgb(0, 93, 93);
+    color: white;
+}
+
+.item4 {
+    grid-area: n;
+    background-color: rgb(5, 5, 34);
+    color: white;
+}
+
+.item5 {
+    grid-area: i;
+    background-color: aqua;
+    color: white;
+}
+
+.item6 {
+    grid-area: e;
+    background-color: rgb(48, 192, 48);
+    color: white;
+}
+
+.item7 {
+    background-color: white;
+    grid-area: a;
+}
+
+.item8 {
+    grid-area: b;
+    background-color: yellow;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "r r r r r r r r r r r r"
+            "r r r r r r r r r r r r"
+            "r r r r r r r r r r r r"
+            "r r r r r r r r r r r r"
+            "r r r r r r r r r r r r"
+            "m m m n n n n n n n n n"
+            "m m m n n n n n n n n n"
+            "m m m b b b b b b b b b"
+            "m m m b b b b b b b b b"
+            "m m m e e e e e i i i i"
+            "m m m e e e e e i i i i";
+    }
+}
